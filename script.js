@@ -13,7 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Add click event to remove the item
             listItem.addEventListener('click', function () {
-                todoList.removeChild(listItem);
+                // Strike Through
+                listItem.classList.toggle('completed');
+                // Remove And Timeout
+                setTimeout(function () {
+                    todoList.removeChild(listItem);
+                }, 300);
             });
 
             // Add the new list item to the bottom of the list

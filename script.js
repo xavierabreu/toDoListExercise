@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Remove And Timeout
                 setTimeout(function () {
                     todoList.removeChild(listItem);
-                }, 300);
+                }, 1000);
             });
 
             // Add the new list item to the bottom of the list
